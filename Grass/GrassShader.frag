@@ -6,8 +6,8 @@ layout (location = 1) out vec4 DiffuseOut;
 layout (location = 2) out vec4 NormalOut;     
 layout (location = 3) out vec3 MaterialSpecular;  
 
-uniform sampler2D Texture0;
-uniform sampler2DShadow ShadowMap;
+layout (binding = 0)uniform sampler2D Texture0;
+layout (binding = 1)uniform sampler2DShadow ShadowMap;
 
 in vec2 TexCoord;                                                                                                                                   
 in vec3 WorldPos; 
